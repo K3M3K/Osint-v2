@@ -391,7 +391,7 @@ def search_with_operator():
             os.system('cls' if os.name == 'nt' else 'clear')
             print(create_banner())
             print("Searching for admin tools...")
-            query = "admin/tools OR filemanager"
+            query = "admin/tools"
             print("Searching...")
             try:
                 results = search_google(query, offset=offset)
@@ -420,6 +420,7 @@ def display_results(results):
         input("Press Enter to return to the menu...")
     else:
         print("No results found.")
+
 
                         
 def dns_lookup():
